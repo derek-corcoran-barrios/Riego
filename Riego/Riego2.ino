@@ -1,4 +1,3 @@
-// Las constantes no cambias, son para seter los pins
 int PinValvula = 11;     // equivale al pin digital 3 "http://robotshop.com/letsmakerobots//files/field_primary_image/NanoAnalogPinChanges.resized.jpg"
 
 void setup() { 
@@ -14,6 +13,4 @@ void loop(){
   digitalWrite(PinValvula, LOW); //apaga la valvula
   delay(1000); 
 } 
-
-
 
