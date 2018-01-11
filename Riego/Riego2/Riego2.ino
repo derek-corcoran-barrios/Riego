@@ -9,15 +9,17 @@ void setup() {
 
 void loop(){
   int sensorValue = analogRead(A0);
-  if (sensorValue >= 700)
+  int threshold = analogRead(A1);
+  if (sensorValue >= threshold)
   {
     digitalWrite(PinValvula, HIGH); // abre la valvula
   }
-  else if (sensorValue < 700){
+  else if (sensorValue < threshold){
     digitalWrite(PinValvula, LOW); //apaga la valvula
   }
   delay(1000); 
   Serial.print(sensorValue);
 } 
+
 
 
